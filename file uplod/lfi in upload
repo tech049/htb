@@ -1,0 +1,7 @@
+ lets have a look at the application what other folders are available and are accessible.
+ The application uses different directories to store the stylesheets and images that are being used by the application. 
+ Lets see if we can use a path traversel injection to upload our files inside these folders
+ ../static/img/shell.php.png (lfi}
+ ../static/img/shell.php.png( try rncoding /) --> ..%2fstatic%2fimg%2fshell.php.png
+ Now try also to upload other files like *.exe or *.html and do a Cross Site Scripting attack.
+ Maybe also try to upload a very big file and see if the application is also protected agains that type of attack.
